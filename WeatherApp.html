@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta type="text/plain" charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="browser.js"></script>
+        <title>Weather App</title>
+    </head>
+    <body class="items-center m-auto flex flex-col">
+    <div>
+      <form class="weatherForm">
+        <input type="text" id="cityInput" placeholder="Type the city" class="rounded-xl">
+      <button type="submit" id="button" class="bg-red-300 rounded-lg" >Go on</button>
+    </form>
+    </div>
+    <section>
+      <div class="pt-15 bg-[url(CloudandSun.png)] min-w-48 ">
+    <h1 class="text-center mt-5 pb-5 text-amber-500 text-4xl font-mono" id="temperature" >30</h1>
+    <h2 class="text-center pb-5 font-bold" id="city">Ha Noi</h2>
+    <p class="text-center pb-5 font-bold" id="humidity">85</p>
+    <p class="text-center pb-5 font-bold italic text-lg" id="windspeed">6 </p>
+   <p class="text-center pb-5 text-4xl">🌤🌞</p>
+      </div>
+    </section>
+    <div id="demo"></div>
+    <div id="pemo"></div>
+    <div id="pamo"></div>
+  </body>
+    <footer></footer>
+</html>
